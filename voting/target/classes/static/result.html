@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auswertung</title>
+	<link rel="stylesheet" type="text/css" media="all" 
+          href="css/main.css" />
+  </head>
+  <body>
+		<h3> Vielen Dank für Ihre Abstimmung!!</h3>
+		<p>Das derzeitige Ergebnis ist:</p>
+		<p>Ja: <span th:text="${votingYes}"></span></p>
+		<p>Nein: <span th:text="${votingNo}"></span></p>
+
+		<br>
+		<a href="/"><button>Erneut Abstimmen</button></a>
+  </body>
+</html>
